@@ -57,11 +57,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var buildVersion = "20260513-140934";
+      var loaderUrl = buildUrl + "/WebGLBuild.loader.js?v=" + buildVersion;
       var config = {
-        dataUrl: buildUrl + "/WebGLBuild.data",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js",
-        codeUrl: buildUrl + "/WebGLBuild.wasm",
+        dataUrl: buildUrl + "/WebGLBuild.data?v=" + buildVersion,
+        frameworkUrl: buildUrl + "/WebGLBuild.framework.js?v=" + buildVersion,
+        codeUrl: buildUrl + "/WebGLBuild.wasm?v=" + buildVersion,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "1-hud-2-3-bloom-ui",
